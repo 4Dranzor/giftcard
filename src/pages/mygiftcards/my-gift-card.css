@@ -1,0 +1,107 @@
+:root {
+  --graygray-200: rgba(226, 232, 240, 1);
+  --graygray-500: rgba(100, 116, 139, 1);
+  --graygray-800: rgba(30, 41, 59, 1);
+}
+
+.info-label {
+  color: gray;
+  font-size: 14px;
+}
+
+.infovalue {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.name {
+  color: #494949;
+  font-size: 12px;
+  font-weight: 400;
+}
+/* .card {
+  max-width: 400px; 
+  margin: 0 auto; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} */
+.profile-image {
+  max-width: 80%;
+  height: auto;
+  margin: 15px 0; /* Add margin-top for spacing between the text and images */
+  object-fit: contain;
+}
+.card-body {
+  padding-bottom: 0px;
+}
+.profile-image,
+.infovalue,
+.infolabel {
+  padding-left: 10px;
+}
+.circle {
+  width: 36px; /* Adjust the width as needed */
+  height: 36px; /* Adjust the height as needed */
+  margin-right: 12px;
+  border-radius: 50%; /* Make it circular */
+  overflow: hidden; /* Clip content within the circular boundaries */
+  position: relative; /* Ensure proper positioning of the image */
+}
+
+/* Style for the image inside the circle */
+.circle img {
+  width: 100%; /* Make the image fill the circular container */
+  height: 100%; /* Make the image fill the circular container */
+  object-fit: contain;
+  vertical-align: middle;
+  padding: 5px;
+}
+
+/* Additional styles for centering the image within the circle */
+.circle::before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.textright {
+  text-align: right;
+}
+.accelement {
+  display: inline-flex;
+  padding: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  border-radius: 15px;
+  border: 1px solid var(--Gray-Gray-200, #e2e8f0);
+  background: #fff;
+  box-shadow: 0px 2px 2px 0px rgba(75, 65, 65, 0.05);
+}
+.label {
+  color: var(--Gray-Gray-500, #64748b);
+}
+
+.myGiftCardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 16px;
+  width: 100%;
+  margin: 12px 0px;
+}
+.headerText {
+  display: flex;
+  align-items: center;
+  padding: 10px 0px;
+}
+.headerText .headerTextTitle {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  margin-left: 12px;
+}
+.headerText img {
+  margin: 0px 10px;
+  width: 16px;
+  height: 16px;
+}
